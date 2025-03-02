@@ -6,7 +6,7 @@ const sequelize = new Sequelize('projetexpress', 'root', '', {
 });
 
 sequelize.authenticate()
-    .then(() => console.log('✅ Connexion à MySQL réussie'))
-    .catch(err => console.error('❌ Erreur de connexion à MySQL :', err));
+    .then(() => console.log('connexion à MySQL réussie'))
+    .catch(err => console.error('erreur de connexion à MySQL :', err));
 
 module.exports = sequelize;
